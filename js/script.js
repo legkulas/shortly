@@ -1,5 +1,6 @@
 const btn = document.getElementById('menu-btn');
 const menu = document.getElementById('menu');
+// let copyToClipboardBtn = document.getElementById('copy-to-clipboard');
 
 const input = document.getElementById('link-input');
 const linkForm = document.getElementById('link-form');
@@ -43,4 +44,16 @@ function formSubmit(e) {
 		input.classList.remove('border-red');
 		alert('Success');
 	}
+}
+
+// Select on pressing COPY
+function copyToClipboard(e, name) {
+    e.preventDefault();
+    let data = document.querySelector('[data-' + name + ']');
+    let url = data.value;
+
+    data.select();
+    data.setSelectionRange(0, 99999); /* For mobile devices */
+    navigator.clipboard.writeText(url);
+    document.execCommand('copy');
 }

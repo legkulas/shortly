@@ -100,32 +100,41 @@
 				</form>
 
 				<!-- Link 1 -->
-				<div class="flex flex-col items-center justify-between w-full p-6 bg-white rounded-lg md:flex-row">
-					<p class="font-bold text-center text-veryDarkViolet md:text-left">https://josephneilosorio-loopstudios.netlify.app</p>
+				<div class="flex flex-col items-center justify-between w-full p-6 bg-white rounded-lg md:flex-row md:space-x-4">
+					<h1 class="text-center text-veryDarkViolet md:text-left">
+                        <span class="block font-bold text-lg text-darkViolet">Loop Studios</span>
+                        <span class="font-normal text-sm">https://josephneilosorio-loopstudios.netlify.app</span>
+                    </h1>
 
-					<div class="flex flex-col items-center justify-end flex-1 space-x-4 space-y-2 md:flex-row md:space-y-0">
-						<div class="font-bold text-cyan">tinyurl.com/loopstudios</div>
-						<button class="p-2 px-8 text-white bg-cyan rounded-lg hover:opacity-70 focus:outline-none">Copy</button>
+					<div data-name="loopstudios" class="flex flex-col items-center justify-end flex-1 space-x-4 space-y-2 md:flex-row md:space-y-0 test-sm">
+                        <input data-loopstudios readonly class="flex-1 text-right font-normal text-cyan text-xs focus:outline-none" value="https://tinyurl.com/loopstudios">
+						<button onclick="copyToClipboard(event, 'loopstudios')" class="p-2 px-8 text-white bg-cyan rounded-lg hover:opacity-70 focus:outline-none">Copy</button>
 					</div>
 				</div>
 
 				<!-- Link 2 -->
-				<div class="flex flex-col items-center justify-between w-full p-6 bg-white rounded-lg md:flex-row">
-					<p class="font-bold text-center text-veryDarkViolet md:text-left">https://josephneilosorio-clipboard.netlify.app/</p>
+				<div class="flex flex-col items-center justify-between w-full p-6 bg-white rounded-lg md:flex-row md:space-x-4">
+					<h1 class="font-bold text-center text-veryDarkViolet md:text-left text-sm">
+                        <span class="block font-bold text-lg text-darkViolet">clipboard</span>
+                        <span class="font-normal text-sm">https://josephneilosorio-clipboard.netlify.app</span>
+                    </h1>
 
-					<div class="flex flex-col items-center justify-end flex-1 space-x-4 space-y-2 md:flex-row md:space-y-0">
-						<div class="font-bold text-cyan">https://tinyurl.com/clip-board</div>
-						<button class="p-2 px-8 text-white bg-darkViolet rounded-lg hover:opacity-70 focus:outline-none">Copy</button>
+					<div data-name="clipboard" class="flex flex-col items-center justify-end flex-1 space-x-4 space-y-2 md:flex-row md:space-y-0 test-sm">
+                        <input data-clipboard readonly class="flex-1 text-right font-normal text-cyan text-xs focus:outline-none" value="https://tinyurl.com/clip-board">
+						<button onclick="copyToClipboard(event, 'clipboard')" class=" p-2 px-8 text-white bg-darkViolet rounded-lg hover:opacity-70 focus:outline-none">Copy</button>
 					</div>
 				</div>
 
 				<!-- Link 3 -->
-				<div class="flex flex-col items-center justify-between w-full p-6 bg-white rounded-lg md:flex-row">
-					<p class="font-bold text-center text-veryDarkViolet md:text-left">Searching Site</p>
+				<div class="flex flex-col items-center justify-between w-full p-6 bg-white rounded-lg md:flex-row md:space-x-4">
+					<h1 class="font-bold text-center text-veryDarkViolet md:text-left text-sm">
+                        <span class="block font-bold text-lg text-darkViolet">searching-site</span>
+                        <span class="font-normal text-sm pointer-events-none">https://josephneilosorio-searching-site.netlify.app</span>
+                    </h1>
 
-					<div class="flex flex-col items-center justify-end flex-1 space-x-4 space-y-2 md:flex-row md:space-y-0">
-						<div class="font-bold text-cyan">https://tinyurl.com/searching-site</div>
-						<button class="p-2 px-8 text-white bg-cyan rounded-lg hover:opacity-70 focus:outline-none">Copy</button>
+					<div data-name="search" class="flex flex-col items-center justify-end flex-1 space-x-4 space-y-2 md:flex-row md:space-y-0 test-sm">
+						<input data-search readonly class="flex-1 text-right font-normal text-cyan text-xs focus:outline-none" value="https://tinyurl.com/searching-site">
+						<button onclick="copyToClipboard(event, 'search')" class=" p-2 px-8 text-white bg-cyan rounded-lg hover:opacity-70 focus:outline-none">Copy</button>
 					</div>
 				</div>
 			</div>
